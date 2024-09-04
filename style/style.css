@@ -1,0 +1,91 @@
+/* font related  */
+.work-sans{
+  font-family: "Work Sans";
+  font-weight: 100 200 300 400 500 600 700;
+}
+/* shared style */
+.btn-primary{
+    color: #FFF;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    border: none;
+    margin-top: 50px;
+
+}
+
+body{
+    max-width: 1920px;
+}
+
+
+/* nav related style */
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+nav h3{
+    color:  #131313;
+    font-size: 2.8rem;
+}
+nav a{
+    text-decoration: none;
+    color:#424242;
+    font-size: 1.2rem;
+}
+nav li{
+}
+
+
+/* banner related section */
+.banner-section{
+    margin-top: 100px;
+    text-align: center;
+}
+.banner-contant{
+    max-width: 868px;
+    margin: 0 auto;
+}
+.banner-contant p{
+    color:#727272;
+    font-size: 16px;
+}
+.banner-contant h1{
+    color:  #131313;
+    font-size: 4rem;
+}
+.banner-section img{
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+/* responsive related sayle */
+/* mobaile small device */
+@media screen and (max-width:576px) {
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 20px;
+    }
+}
+
+/* medium device */
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav{
+        flex-direction: column;
+    }
+}
