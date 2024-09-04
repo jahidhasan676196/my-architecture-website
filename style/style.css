@@ -14,6 +14,9 @@
     margin-top: 50px;
 
 }
+main{
+    margin: 0 240px;
+}
 
 body{
     max-width: 1920px;
@@ -70,22 +73,182 @@ nav li{
     margin-top: 50px;
 }
 
+/* feachares team section */
+.feachars-teams{
+    display: flex;
+    margin-top: 100px;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 24px;
+}
+.team-description{
+    margin-left: 80px;
+    margin-top: 200px;
+}
+.team-description h3{
+    color: #131313;
+    font-size: 2.8rem;
+}
+.span-1{
+    color: #727272;
+}
+.span-2{
+    color:#FF900E;
+}
+.team-description p{
+    color: #727272;
+    font-size: 1rem;
+}
+
+/* feachared section related style */
+.feachared-section{
+    display: flex;
+    margin-top: 130px;
+    gap: 140px;
+}
+.feachared-contant{
+
+}
+.box{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feachared-contant h3{
+    color: #131313;
+    font-size: 2.28rem;
+}
+.feachared-contant p{
+    color: #727272;
+    font-size: 1rem;
+}
+.box h5{
+    color: #131313;
+    font-size: 1.2rem;
+}
+.box p{
+    color: #727272;
+    font-size: 1rem;
+}
+.box{
+    margin-top: 10px;
+    padding: 10px;
+}
+.exprience{
+    border-radius: 8px;
+    background: #FF900E;
+    width: 342px;
+    height: 200px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+    right: 100px;
+}
+.exprience h3{
+    color: #FFF;
+    font-size: 4rem;
+}
+.exprience p{
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+/* some fact realative style */
+.fact-section{
+
+}
+.card-contant{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.fact-section h3{
+    color: #131313;
+    font-size: 2.28rem;
+}
+.fact-section p{
+    color: #727272;
+    font-size: 1rem;
+}
+.card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 60px;
+    text-align: center;
+}
+.card h3{
+    color: #424242;
+    font-size: 2.28rem;
+}
+.card p{
+    color: #727272;
+    font-size: 1.2rem;
+}
 
 
+/* sponsors related style */
+.sponsors-section{
+    margin-top: 180px;
+    text-align: center;
+}
+.sponsors-section h3{
+    color: #131313;
+    font-size: 2.8rem
+}
+.sponsors-section p{
+    color: #727272;
+    font-size: 1rem;
+}
+.sponsors-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+/* footer related style */
+footer{
+    margin: 130px 240px 216px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 38px 350px;
+}
+footer p{
+    color:  #424242;
+    font-size: 1.25rem;
+}
 /* responsive related sayle */
 /* mobaile small device */
 @media screen and (max-width:576px) {
-    nav{
+    nav,
+    .feachars-teams
+    {
         flex-direction: column;
+    }
+    .team-img {
+        grid-template-columns: 1fr;
     }
     header{
         padding: 20px;
+    }
+    main{
+        margin: 0 10px;
     }
 }
 
 /* medium device */
 @media screen and (min-width:576px) and (max-width:960px) {
-    nav{
+    nav,
+    .feachars-teams
+    {
         flex-direction: column;
+    }
+    .team-img {
+        grid-template-columns:1fr;
+    }
+    main{
+        margin: 0 10px;
     }
 }
