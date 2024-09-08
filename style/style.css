@@ -3,6 +3,12 @@
   font-family: "Work Sans";
   font-weight: 100 200 300 400 500 600 700;
 }
+*{
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+    width: auto;
+}
 /* shared style */
 .btn-primary{
     color: #FFF;
@@ -105,16 +111,24 @@ nav li{
 /* feachared section related style */
 .feachared-section{
     display: flex;
-    margin-top: 130px;
-    gap: 140px;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    margin: 100px auto;
+
 }
 .feachared-contant{
-
+    width: 50%;
 }
 .box{
     border-radius: 8px;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.images-contant img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .feachared-contant h3{
     color: #131313;
@@ -139,8 +153,8 @@ nav li{
 .exprience{
     border-radius: 8px;
     background: #FF900E;
-    width: 342px;
-    height: 200px;
+    width: 250px;
+    height: 100px;
     padding: 40px;
     text-align: center;
     position: relative;
@@ -163,7 +177,8 @@ nav li{
 .card-contant{
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
+    gap: 24px;
+    margin-top: 50px;
 }
 .fact-section h3{
     color: #131313;
@@ -191,7 +206,7 @@ nav li{
 
 /* sponsors related style */
 .sponsors-section{
-    margin-top: 180px;
+    margin-top: 100px;
     text-align: center;
 }
 .sponsors-section h3{
@@ -213,42 +228,128 @@ footer{
     margin: 130px 240px 216px;
     border-radius: 8px;
     background: #FFF4E7;
-    padding: 38px 350px;
+    padding: 50px 100px;
+    max-height: 100px;
 }
 footer p{
     color:  #424242;
     font-size: 1.25rem;
 }
+.hide{
+    display: none;
+}
 /* responsive related sayle */
 /* mobaile small device */
-@media screen and (max-width:576px) {
-    nav,
-    .feachars-teams
-    {
-        flex-direction: column;
-    }
-    .team-img {
-        grid-template-columns: 1fr;
-    }
+@media  screen and (max-width:576px) {
     header{
         padding: 20px;
     }
+    nav{
+        flex-direction: column;
+    }
     main{
-        margin: 0 10px;
+        margin: 0px;
+        padding: 20px;
+    }
+    .feachars-teams{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .team-img{
+        grid-template-columns:1fr;
+        margin-top: 10px;
+    }
+    .team-description {
+        width: auto;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .feachared-section{
+        flex-direction: column;
+        margin: 0;
+        /* padding: 20px; */
+    }
+    .feachared-contant{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .exprience{
+        position: static;
+        padding: 20px;
+    }
+    .card-contant{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .fact-section{
+        margin-top: 50px;
+    }
+    .sponsors-div{
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 50px;
+    }
+    footer{
+        margin: 0;
+        padding: 20px;
+
     }
 }
 
 /* medium device */
 @media screen and (min-width:576px) and (max-width:960px) {
-    nav,
-    .feachars-teams
-    {
-        flex-direction: column;
+    header{
+        padding: 20px;
     }
-    .team-img {
-        grid-template-columns:1fr;
+    nav{
+        flex-direction: row;
     }
     main{
-        margin: 0 10px;
+        margin: 0px;
+        padding: 20px;
     }
+    .feachars-teams{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .team-img{
+        grid-template-columns:repeat(2,1fr);
+        margin-top: 10px;
+    }
+    .team-description {
+        width: auto;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .feachared-section{
+        flex-direction: column;
+        margin: 0;
+        /* padding: 20px; */
+    }
+    .feachared-contant{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .exprience{
+        position: static;
+        padding: 20px;
+    }
+    .card-contant{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .fact-section{
+        margin-top: 50px;
+    }
+    .sponsors-div{
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 50px;
+    }
+    footer{
+        margin: 0;
+        padding: auto;
+
+    }
+    
 }
